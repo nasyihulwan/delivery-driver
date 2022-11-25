@@ -8,8 +8,8 @@ public class FollowCamera : MonoBehaviour
     // this thing position (camera) should be same as the car position
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        transform.position = thingToFollow.transform.position;
+        transform.position = thingToFollow.transform.position + new Vector3 (0,0,-10);
     }
 }
